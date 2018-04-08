@@ -23,7 +23,7 @@
 		<center>
 			<div style="display: inline-block;padding:20px; border: 1px solid black; width: 60%;margin-right:20px; height: 600px;" class="shadowStyle">
 				<textarea rows="40" style="resize: none;" cols="100" id="ta1" onchange="hotLoad()"></textarea>
-			</div>  
+			</div>
 			<div style="display: inline-block; border: 1px solid black; width: 25%; height: 600px; overflow: scroll;" class="shadowStyle" id="result"/>
 		</center>
 		</body>
@@ -32,11 +32,6 @@
 				var user = firebase.auth().onAuthStateChanged(function(user){
 					if(user){
 						document.title =  "Welcome "+ user.displayName;
-						new nicEditor({iconsPath : './nicEditorIcons.gif',fullPanel : true}).panelInstance('ta1');
-						document.getElementsByClassName(" nicEdit-main    ")[0].addEventListener("onchange", function(){
-						    //document.getElementById("result").innerHTML = nicEditors.findEditor('ta1').getContent();
-						    alert(4+6);
-						});
 					}
 					else{
 						console.log("Logged out!");
