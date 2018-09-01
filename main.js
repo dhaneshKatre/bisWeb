@@ -2,7 +2,7 @@ var provider = new firebase.auth.GoogleAuthProvider();
 var file;
 var modal;
 var config = {
-	apiKey: "AIzaSyDuo3-oBvvMdA2mwC59bb1xMTtz-0zcReE",
+	apiKey: "<key>",
 	authDomain: "bookinshort.firebaseapp.com",
 	databaseURL: "https://bookinshort.firebaseio.com",
 	projectId: "bookinshort",
